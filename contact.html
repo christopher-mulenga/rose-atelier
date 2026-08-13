@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Rosé Atelier</title>
+<meta name="description" content="Reach Rosé Atelier to book an appointment — nail bar and hair salon, by appointment only.">
+<link rel="icon" href="images/favicon.ico">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Rosé Atelier" class="logo-img">
+      <span class="logo-text">Rosé Atelier</span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="articles.html">Articles</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow underline-draw reveal">Contact</span>
+      <h1 class="reveal reveal-delay-1" style="margin-top:1.2rem;">Let's find you a time.</h1>
+      <p class="lede reveal reveal-delay-2">Tell us a little about what you're after, and we'll write back with the right service, artist, and time.</p>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="wrap contact-layout">
+
+      <div class="contact-details reveal">
+        <div class="detail-item">
+          <span class="eyebrow">Location</span>
+          <p>14 Marlowe Lane, Third Floor<br>By appointment only</p>
+        </div>
+        <div class="detail-item">
+          <span class="eyebrow">Hours</span>
+          <p>Tuesday – Saturday, 10am – 6pm<br>Closed Sunday &amp; Monday</p>
+        </div>
+        <div class="detail-item">
+          <span class="eyebrow">Email</span>
+          <p>hello@roseatelier.com</p>
+        </div>
+        <div class="detail-item">
+          <span class="eyebrow">A Note</span>
+          <p>We keep our books small so every visit has room to breathe — please allow a few days for us to confirm your preferred time.</p>
+        </div>
+      </div>
+
+      <form class="reveal reveal-delay-1" id="bookingForm" novalidate>
+        <div class="form-grid">
+          <div class="field">
+            <label for="fullName">Name</label>
+            <input type="text" id="fullName" name="fullName" required autocomplete="name">
+            <span class="field-error"></span>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+            <span class="field-error"></span>
+          </div>
+          <div class="field">
+            <label for="service">Service Interest</label>
+            <select id="service" name="service" required>
+              <option value="" selected disabled>Select a service</option>
+              <option value="nails">Nail Care</option>
+              <option value="hair">Hair &amp; Colour</option>
+              <option value="spa">Spa Treatments</option>
+              <option value="bridal">Bridal &amp; Occasion</option>
+              <option value="unsure">Not Sure Yet</option>
+            </select>
+            <span class="field-error"></span>
+          </div>
+          <div class="field">
+            <label for="preferredDate">Preferred Date</label>
+            <input type="date" id="preferredDate" name="preferredDate" required>
+            <span class="field-error"></span>
+          </div>
+          <div class="field full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us a little about what you're looking for…" required></textarea>
+            <span class="field-error"></span>
+          </div>
+        </div>
+        <div class="form-foot">
+          <button type="submit" class="btn btn-solid">Send Request <span class="btn-arrow">→</span></button>
+          <span class="form-status" id="formStatus" role="status" aria-live="polite"></span>
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="footer-name">Rosé Atelier</p>
+    <p class="footer-line">Nail Bar &amp; Hair Salon — quiet luxury, by appointment.</p>
+    <p class="footer-copy">&copy; 2026 Rosé Atelier. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
